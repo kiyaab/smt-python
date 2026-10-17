@@ -1,0 +1,90 @@
+# System & Application Configuration
+
+application:
+  name: "Hand Motion-to-Sentence & Multilingual Translator"
+  version: "0.1.0"
+  tagline: "Disability is Not Inability"
+
+hardware:
+  min_ram_gb: 4.0
+  allow_gpu: false  # Ensure CPU-only benchmark compliance
+
+capture:
+  camera_index: 0
+  width: 640
+  height: 480
+  fps_target: 30
+  buffer_size: 2
+  flip_horizontal: true
+
+tracking:
+  model_dir: "models/mediapipe"
+  min_hand_detection_confidence: 0.5
+  min_hand_presence_confidence: 0.5
+  min_tracking_confidence: 0.5
+  num_hands: 2
+  extract_pose: true
+  extract_face: true
+  use_tasks_api: true
+
+normalization:
+  sequence_length: 30
+  anchor_joint: "wrist"
+  scale_reference: "palm_width"
+  include_velocity: true
+  num_landmarks_hand: 21
+  total_features: 138  # (21 joints * 3 coords * 2 hands) + 12 pose/face keypoints
+
+recognition:
+  confidence_threshold: 0.60
+  idle_energy_threshold: 0.012
+  debounce_frames: 18
+  model_path: "models/onnx/sign_classifier.onnx"
+  label_map_path: "models/label_map.json"
+
+language:
+  sign_language: "ASL"
+  pivot_language: "en"
+  sentence_pause_timeout_sec: 1.5
+  enable_grammar_engine: true
+
+translation:
+  backend: "auto"  # "auto", "rule", "online", "nllb"
+  cache_translations: true
+  languages:
+    - code: "en"
+      name: "English"
+      nllb_code: "eng_Latn"
+      rtl: false
+    - code: "am"
+      name: "Amharic"
+      nllb_code: "amh_Ethi"
+      rtl: false
+      font_family: "Nyala, Abyssinica SIL, Segoe UI Historic"
+    - code: "es"
+      name: "Spanish"
+      nllb_code: "spa_Latn"
+      rtl: false
+    - code: "fr"
+      name: "French"
+      nllb_code: "fra_Latn"
+      rtl: false
+    - code: "ar"
+      name: "Arabic"
+      nllb_code: "arb_Arab"
+      rtl: true
+    - code: "zh-CN"
+      name: "Mandarin Chinese"
+      nllb_code: "zho_Hans"
+      rtl: false
+
+speech:
+  backend: "auto"  # "auto", "gtts", "pyttsx3"
+  speech_rate: 150
+  volume: 1.0
+
+ui:
+  theme: "accessible_dark"
+  font_size_scale: 1.0
+  show_landmarks: true
+  show_fps: true

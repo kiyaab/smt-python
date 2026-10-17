@@ -1,0 +1,24 @@
+# Core Vision & Landmark Extraction
+opencv-python>=4.8.0
+mediapipe>=0.10.9
+
+# Machine Learning & Math
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+onnxruntime>=1.16.0
+psutil>=5.9.0
+
+# Desktop UI
+PyQt6>=6.5.0
+
+# Configuration
+PyYAML>=6.0.1
+
+# Multilingual Translation & Speech
+deep-translator>=1.11.4
+gTTS>=2.4.0
+pyttsx3>=2.90
+
+# Testing
+pytest>=7.4.0

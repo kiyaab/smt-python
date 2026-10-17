@@ -1,0 +1,36 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Data & Models (keep folders, ignore large files)
+data/raw/*.npz
+data/processed/*.npz
+models/mediapipe/*.task
+models/trained/*.pt
+models/onnx/*.onnx
+
+# Allow gitkeep files
+!.gitkeep
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build outputs
+build/
+dist/
+*.egg-info/

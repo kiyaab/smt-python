@@ -1,0 +1,473 @@
+sign_language: "ASL"
+description: "Starter vocabulary for inclusive communication prototype"
+version: "1.0.0"
+
+glosses:
+  - id: 0
+    gloss: "IDLE"
+    display_name: "Neutral / Resting"
+    category: "system"
+    role: "neutral"
+    is_idle: true
+
+  # Greetings & Politeness
+  - id: 1
+    gloss: "HELLO"
+    display_name: "Hello / Greetings"
+    category: "greetings"
+    role: "greeting"
+    translations:
+      en: "Hello"
+      am: "ሰላም"
+      es: "Hola"
+      fr: "Bonjour"
+      ar: "مرحبا"
+      zh-CN: "你好"
+
+  - id: 2
+    gloss: "GOODBYE"
+    display_name: "Goodbye"
+    category: "greetings"
+    role: "greeting"
+    translations:
+      en: "Goodbye"
+      am: "ደህና ሁን"
+      es: "Adiós"
+      fr: "Au revoir"
+      ar: "وداعا"
+      zh-CN: "再见"
+
+  - id: 3
+    gloss: "PLEASE"
+    display_name: "Please"
+    category: "politeness"
+    role: "adverb"
+    translations:
+      en: "Please"
+      am: "እባክዎን"
+      es: "Por favor"
+      fr: "S'il vous plaît"
+      ar: "من فضلك"
+      zh-CN: "请"
+
+  - id: 4
+    gloss: "THANK_YOU"
+    display_name: "Thank You"
+    category: "politeness"
+    role: "expression"
+    translations:
+      en: "Thank you"
+      am: "አመሰግናለሁ"
+      es: "Gracias"
+      fr: "Merci"
+      ar: "شكرا لك"
+      zh-CN: "谢谢"
+
+  - id: 5
+    gloss: "SORRY"
+    display_name: "Sorry / Excuse Me"
+    category: "politeness"
+    role: "expression"
+    translations:
+      en: "Sorry"
+      am: "ይቅርታ"
+      es: "Lo siento"
+      fr: "Désolé"
+      ar: "آسف"
+      zh-CN: "对不起"
+
+  # Core Needs & Emergency
+  - id: 6
+    gloss: "HELP"
+    display_name: "Help"
+    category: "emergency"
+    role: "noun/verb"
+    translations:
+      en: "Help"
+      am: "እርዳታ"
+      es: "Ayuda"
+      fr: "Aide"
+      ar: "مساعدة"
+      zh-CN: "帮助"
+
+  - id: 7
+    gloss: "WATER"
+    display_name: "Water"
+    category: "needs"
+    role: "noun"
+    translations:
+      en: "Water"
+      am: "ውሃ"
+      es: "Agua"
+      fr: "Eau"
+      ar: "ماء"
+      zh-CN: "水"
+
+  - id: 8
+    gloss: "FOOD"
+    display_name: "Food / Eat"
+    category: "needs"
+    role: "noun/verb"
+    translations:
+      en: "Food"
+      am: "ምግብ"
+      es: "Comida"
+      fr: "Nourriture"
+      ar: "طعام"
+      zh-CN: "食物"
+
+  - id: 9
+    gloss: "BATHROOM"
+    display_name: "Bathroom / Toilet"
+    category: "needs"
+    role: "noun"
+    translations:
+      en: "Bathroom"
+      am: "መጸዳጃ ቤት"
+      es: "Baño"
+      fr: "Toilettes"
+      ar: "حمام"
+      zh-CN: "洗手间"
+
+  - id: 10
+    gloss: "HOSPITAL"
+    display_name: "Hospital / Clinic"
+    category: "emergency"
+    role: "noun"
+    translations:
+      en: "Hospital"
+      am: "ሆስፒታል"
+      es: "Hospital"
+      fr: "Hôpital"
+      ar: "مستشفى"
+      zh-CN: "医院"
+
+  - id: 11
+    gloss: "EMERGENCY"
+    display_name: "Emergency"
+    category: "emergency"
+    role: "noun"
+    translations:
+      en: "Emergency"
+      am: "አስቸኳይ ጊዜ"
+      es: "Emergencia"
+      fr: "Urgence"
+      ar: "حالة طوارئ"
+      zh-CN: "紧急情况"
+
+  # Pronouns & People
+  - id: 12
+    gloss: "ME"
+    display_name: "I / Me / My"
+    category: "pronouns"
+    role: "pronoun"
+    translations:
+      en: "I"
+      am: "እኔ"
+      es: "Yo"
+      fr: "Je"
+      ar: "أنا"
+      zh-CN: "我"
+
+  - id: 13
+    gloss: "YOU"
+    display_name: "You / Your"
+    category: "pronouns"
+    role: "pronoun"
+    translations:
+      en: "You"
+      am: "አንተ/አንቺ"
+      es: "Tú"
+      fr: "Tu"
+      ar: "أنت"
+      zh-CN: "你"
+
+  - id: 14
+    gloss: "WE"
+    display_name: "We / Us"
+    category: "pronouns"
+    role: "pronoun"
+    translations:
+      en: "We"
+      am: "እኛ"
+      es: "Nosotros"
+      fr: "Nous"
+      ar: "نحن"
+      zh-CN: "我们"
+
+  - id: 15
+    gloss: "NAME"
+    display_name: "Name"
+    category: "identity"
+    role: "noun"
+    translations:
+      en: "Name"
+      am: "ስም"
+      es: "Nombre"
+      fr: "Nom"
+      ar: "اسم"
+      zh-CN: "名字"
+
+  - id: 16
+    gloss: "DOCTOR"
+    display_name: "Doctor"
+    category: "people"
+    role: "noun"
+    translations:
+      en: "Doctor"
+      am: "ሐኪም"
+      es: "Médico"
+      fr: "Médecin"
+      ar: "طبيب"
+      zh-CN: "医生"
+
+  - id: 17
+    gloss: "FRIEND"
+    display_name: "Friend"
+    category: "people"
+    role: "noun"
+    translations:
+      en: "Friend"
+      am: "ጓደኛ"
+      es: "Amigo"
+      fr: "Ami"
+      ar: "صديق"
+      zh-CN: "朋友"
+
+  - id: 18
+    gloss: "FAMILY"
+    display_name: "Family"
+    category: "people"
+    role: "noun"
+    translations:
+      en: "Family"
+      am: "ቤተሰብ"
+      es: "Familia"
+      fr: "Famille"
+      ar: "عائلة"
+      zh-CN: "家庭"
+
+  # Verbs & Desires
+  - id: 19
+    gloss: "WANT"
+    display_name: "Want"
+    category: "verbs"
+    role: "verb"
+    translations:
+      en: "want"
+      am: "እፈልጋለሁ"
+      es: "querer"
+      fr: "vouloir"
+      ar: "يريد"
+      zh-CN: "想要"
+
+  - id: 20
+    gloss: "NEED"
+    display_name: "Need"
+    category: "verbs"
+    role: "verb"
+    translations:
+      en: "need"
+      am: "ያስፈልገኛል"
+      es: "necesitar"
+      fr: "avoir besoin"
+      ar: "يحتاج"
+      zh-CN: "需要"
+
+  - id: 21
+    gloss: "GO"
+    display_name: "Go"
+    category: "verbs"
+    role: "verb"
+    translations:
+      en: "go"
+      am: "መሄድ"
+      es: "ir"
+      fr: "aller"
+      ar: "يذهب"
+      zh-CN: "去"
+
+  - id: 22
+    gloss: "SEE"
+    display_name: "See / Look"
+    category: "verbs"
+    role: "verb"
+    translations:
+      en: "see"
+      am: "ማየት"
+      es: "ver"
+      fr: "voir"
+      ar: "يرى"
+      zh-CN: "看"
+
+  - id: 23
+    gloss: "UNDERSTAND"
+    display_name: "Understand"
+    category: "verbs"
+    role: "verb"
+    translations:
+      en: "understand"
+      am: "መረዳት"
+      es: "entender"
+      fr: "comprendre"
+      ar: "يفهم"
+      zh-CN: "理解"
+
+  - id: 24
+    gloss: "HAVE"
+    display_name: "Have"
+    category: "verbs"
+    role: "verb"
+    translations:
+      en: "have"
+      am: "አለኝ"
+      es: "tener"
+      fr: "avoir"
+      ar: "يمتلك"
+      zh-CN: "有"
+
+  # Questions
+  - id: 25
+    gloss: "WHAT"
+    display_name: "What"
+    category: "questions"
+    role: "question"
+    translations:
+      en: "What"
+      am: "ምን"
+      es: "Qué"
+      fr: "Quoi"
+      ar: "ماذا"
+      zh-CN: "什么"
+
+  - id: 26
+    gloss: "WHERE"
+    display_name: "Where"
+    category: "questions"
+    role: "question"
+    translations:
+      en: "Where"
+      am: "የት"
+      es: "Dónde"
+      fr: "Où"
+      ar: "أين"
+      zh-CN: "在哪里"
+
+  - id: 27
+    gloss: "WHEN"
+    display_name: "When"
+    category: "questions"
+    role: "question"
+    translations:
+      en: "When"
+      am: "መቼ"
+      es: "Cuándo"
+      fr: "Quand"
+      ar: "متى"
+      zh-CN: "什么时候"
+
+  - id: 28
+    gloss: "HOW"
+    display_name: "How"
+    category: "questions"
+    role: "question"
+    translations:
+      en: "How"
+      am: "እንዴት"
+      es: "Cómo"
+      fr: "Comment"
+      ar: "كيف"
+      zh-CN: "怎样"
+
+  # Responses & States
+  - id: 29
+    gloss: "YES"
+    display_name: "Yes"
+    category: "responses"
+    role: "affirmation"
+    translations:
+      en: "Yes"
+      am: "አዎ"
+      es: "Sí"
+      fr: "Oui"
+      ar: "نعم"
+      zh-CN: "是"
+
+  - id: 30
+    gloss: "NO"
+    display_name: "No"
+    category: "responses"
+    role: "negation"
+    translations:
+      en: "No"
+      am: "አይ"
+      es: "No"
+      fr: "Non"
+      ar: "لا"
+      zh-CN: "不"
+
+  - id: 31
+    gloss: "GOOD"
+    display_name: "Good / Fine"
+    category: "states"
+    role: "adjective"
+    translations:
+      en: "Good"
+      am: "ጥሩ"
+      es: "Bien"
+      fr: "Bien"
+      ar: "جيد"
+      zh-CN: "好"
+
+  - id: 32
+    gloss: "BAD"
+    display_name: "Bad"
+    category: "states"
+    role: "adjective"
+    translations:
+      en: "Bad"
+      am: "መጥፎ"
+      es: "Mal"
+      fr: "Mauvais"
+      ar: "سيء"
+      zh-CN: "不好"
+
+  # Numbers
+  - id: 33
+    gloss: "ONE"
+    display_name: "One (1)"
+    category: "numbers"
+    role: "number"
+    translations:
+      en: "One"
+      am: "አንድ"
+      es: "Uno"
+      fr: "Un"
+      ar: "واحد"
+      zh-CN: "一"
+
+  - id: 34
+    gloss: "TWO"
+    display_name: "Two (2)"
+    category: "numbers"
+    role: "number"
+    translations:
+      en: "Two"
+      am: "ሁለት"
+      es: "Dos"
+      fr: "Deux"
+      ar: "اثنان"
+      zh-CN: "二"
+
+  - id: 35
+    gloss: "THREE"
+    display_name: "Three (3)"
+    category: "numbers"
+    role: "number"
+    translations:
+      en: "Three"
+      am: "ሦስት"
+      es: "Tres"
+      fr: "Trois"
+      ar: "ثلاثة"
+      zh-CN: "三"
